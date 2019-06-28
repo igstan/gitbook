@@ -31,5 +31,35 @@ def foo(a: Int): Int = a
 {% endtab %}
 {% endtabs %}
 
+{% api-method method="delete" host="" path="/v1/users/:id" %}
+{% api-method-summary %}
+Delete User
+{% endapi-method-summary %}
 
+{% api-method-description %}
+Deletes a user.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name=":id" type="string" required=true %}
+User ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=202 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
